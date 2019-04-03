@@ -1,4 +1,4 @@
-<p align="center">
+
 ## TREE MANAGEMNET
  
 # Introduction project
