@@ -1,7 +1,10 @@
+<p align="center">
+  <b>TREE MANAGEMNET</b><br>
+ 
 # Introduction project
 A mini project of management tree at school. We use C# and SQL to develop this software.
 
-# Service:
+# Features:
  - Add and management new tree in the school
  - Create and show List work 
  - Create and management all tree in the school
@@ -9,8 +12,8 @@ A mini project of management tree at school. We use C# and SQL to develop this s
  - Do report monthly
  - Do report about heath tree in school
 
-# MEMBER
-TỐNG ANH QUÂN         16520985(leader)
-BÙI TRUNG ĐIỀN        16521554
-NGUYỄN ĐÔNG QUÂN      16520982
+# MEMBER:
+-TỐNG ANH QUÂN         16520985(leader)
+-BÙI TRUNG ĐIỀN        16521554
+-NGUYỄN ĐÔNG QUÂN      16520982
 ![](12670836_259419054393807_70246416484125136_n.png)
