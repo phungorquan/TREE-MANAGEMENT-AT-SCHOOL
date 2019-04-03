@@ -1,5 +1,5 @@
 <p align="center">
-  <b>##TREE MANAGEMNET</b><br>
+## TREE MANAGEMNET
  
 # Introduction project
 A mini project of management tree at school. We use C# and SQL to develop this software.
