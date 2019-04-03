@@ -10,4 +10,7 @@ A mini project of management tree at school. We use C# and SQL to develop this s
  - Do report about heath tree in school
 
 # MEMBER
+TỐNG ANH QUÂN         16520985(leader)
+BÙI TRUNG ĐIỀN        16521554
+NGUYỄN ĐÔNG QUÂN      16520982
 ![](12670836_259419054393807_70246416484125136_n.png)
