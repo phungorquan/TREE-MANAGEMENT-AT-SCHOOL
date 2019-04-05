@@ -32,19 +32,26 @@ Not only manage, this software also help you create forms to handle easily such 
     + MSSQL
     
 # III. Diagram:
+  - Situation :
+![](Diagram/HienTrang.png)
+
+/*  */
   - Function Decomposition Diagram : 
 ![](Diagram/FDD2.png)
   
+/*  */  
   - Data Flow Diagram :
 ![](Diagram/FDL2.png)
   
+/*  */  
   - Entity – Relationship Diagram :
 ![](Diagram/ERD2.png)
 
+/*  */
   - Overall Diagram :
 ![](Diagram/OD2.png)
 
-
+/*  */
 # IV. Functions:
   1. Create new tree records:
   
