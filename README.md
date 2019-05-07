@@ -55,6 +55,11 @@ Not only manage, this software also help you create forms to handle easily such 
   - Data Design :
 ![](Diagram/DataDesign.png)
 
+/*  */
+  - Class Diagram :
+![](Diagram/CD.png)
+
+
 # IV. Functions:
   1. Create new tree records:
   
