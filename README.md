@@ -56,8 +56,11 @@ Not only manage, this software also help you create forms to handle easily such 
 ![](Diagram/DataDesign.png)
 
 /*  */
-  - Class Diagram :
-![](Diagram/CD.png)
+  - Class Diagram Tree :
+![](Diagram/CaytthietkeCD.png)
+
+  - Class Diagram Supplies:
+![](Diagram/VattuthietkeCD.png)  
 
 
 # IV. Functions:
