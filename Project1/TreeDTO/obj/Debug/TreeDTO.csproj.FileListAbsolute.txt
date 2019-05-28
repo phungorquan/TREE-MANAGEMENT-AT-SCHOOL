@@ -1,0 +1,6 @@
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeDTO\obj\Debug\TreeDTO.csproj.CoreCompileInputs.cache
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeDTO\bin\Debug\TreeDTO.dll
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeDTO\bin\Debug\TreeDTO.pdb
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeDTO\obj\Debug\TreeDTO.dll
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeDTO\obj\Debug\TreeDTO.pdb
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeDTO\obj\Debug\TreeDTO.csprojAssemblyReference.cache

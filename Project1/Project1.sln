@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeDTO", "TreeDTO\TreeDTO.csproj", "{50F163AC-6F49-4BB6-878E-367E860916E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeDAL", "TreeDAL\TreeDAL.csproj", "{79CBB65F-82B2-4B6B-A3CD-1D304E8A3593}"
+	ProjectSection(ProjectDependencies) = postProject
+		{50F163AC-6F49-4BB6-878E-367E860916E3} = {50F163AC-6F49-4BB6-878E-367E860916E3}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeBUS", "TreeBUS\TreeBUS.csproj", "{1C0BC645-0B59-4AD1-AFB4-814741A61083}"
+	ProjectSection(ProjectDependencies) = postProject
+		{79CBB65F-82B2-4B6B-A3CD-1D304E8A3593} = {79CBB65F-82B2-4B6B-A3CD-1D304E8A3593}
+		{50F163AC-6F49-4BB6-878E-367E860916E3} = {50F163AC-6F49-4BB6-878E-367E860916E3}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeGUI", "TreeGUI\TreeGUI.csproj", "{7F61A8FD-BE78-4A76-9DB3-D8D829466B26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50F163AC-6F49-4BB6-878E-367E860916E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50F163AC-6F49-4BB6-878E-367E860916E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50F163AC-6F49-4BB6-878E-367E860916E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50F163AC-6F49-4BB6-878E-367E860916E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79CBB65F-82B2-4B6B-A3CD-1D304E8A3593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79CBB65F-82B2-4B6B-A3CD-1D304E8A3593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79CBB65F-82B2-4B6B-A3CD-1D304E8A3593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79CBB65F-82B2-4B6B-A3CD-1D304E8A3593}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C0BC645-0B59-4AD1-AFB4-814741A61083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C0BC645-0B59-4AD1-AFB4-814741A61083}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C0BC645-0B59-4AD1-AFB4-814741A61083}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C0BC645-0B59-4AD1-AFB4-814741A61083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F61A8FD-BE78-4A76-9DB3-D8D829466B26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F61A8FD-BE78-4A76-9DB3-D8D829466B26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F61A8FD-BE78-4A76-9DB3-D8D829466B26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F61A8FD-BE78-4A76-9DB3-D8D829466B26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {596B0D12-9980-4DC3-BF7C-C0A84C08AA81}
+	EndGlobalSection
+EndGlobal
