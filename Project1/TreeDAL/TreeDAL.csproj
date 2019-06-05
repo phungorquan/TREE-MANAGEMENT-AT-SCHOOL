@@ -45,6 +45,7 @@
     <Compile Include="BaoCaoDAL.cs" />
     <Compile Include="CayCanhDAL.cs" />
     <Compile Include="LoaiCayDAL.cs" />
+    <Compile Include="TinhTrangDAL.cs" />
     <Compile Include="ViTrDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VattuDAL.cs" />

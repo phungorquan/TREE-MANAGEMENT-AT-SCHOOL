@@ -117,25 +117,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="STT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Caycanh.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Loại.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Vitri.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="TrinhTrang.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="load.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAYwAAAGMAbOUdMMAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAADBUlEQVRYR8WXy2sTURTGs1LxgeITQQVBUBEEceGjM8NApeBGVCwuRF1Y/BcUXAlaiqCLokhMZ4YG
+        xJpC2sykoVrUulDqpqSIUgT3olgMRdC2Er8TM/XMyRnSQYiLXzM557vfmd57c+dMqlqt/lfUYCtRg61E
+        DcZhF/p2GUXvihm4Y+A9mDEC9xM+y2bRHcZnl1lyN2lj41CDkqP57GYrcPMoUF0CC5bv9hwv9S7XvCRq
+        kGMVvdMw/SyKNAUz89Yq9B3QPDlqkDg2ll4Lk4eaeQLmDN+9pvmHqEHCKLqPFUPilek7N83AO2mXMtus
+        YmavETgXjMC7i9xHoZ3H0p3V/EPUIDZapzAiKlbRvajpQ+wX3grc2C1of4GfdJOajtMQoA2HwV/qRUMm
+        jCC7Q2rjaPO9w1bgdGg5SUPADJwhUbxiDbvbpS4JB4P0SixbL7xv0zXPRYS0nqJ4FXvhMtckhQpiMz9f
+        9MM1v4mIGNN2lRfHGr7h+aR0PMmugs941LPGOOVIExmAxDMh7Ob5JNi5e6tN33sp/P6CHGkig5D4IIRn
+        eD4JSzk5SRMZhOBsROBndvJ8EjB+kHvFMEi7/gEu6HerCX6A79gL97UizWgrOGvMQv9+4TlrD3nrKEca
+        OvGeCkEDpJHmSwWn5CnhN83zKTtIb8QsTAkRw5kiDR+UBJyeN7if/Gdqf9rz/RuQLHNhnTLl+ICkwOM1
+        96R+gucXL46M9q2HYJKJJynGxUmxfOcS86uBtd/NNZEB9ZsYIP65OI5v+FTCwjXQNUld5Esc9GAxRtxD
+        Wk6jXnwiUhwPuPZCZovURr5o0CMVg/FodRdA975cbpmmCzF87zx03wAvTmvfqekbAhxqJjB4XphNYyrv
+        YFbO2YG3509T4pxA7Dpy2rkPnEeaP6EGQ6idgsFco2EiBqi90/wJNcihxpIaTMW4GV+btWOEGpRQi02t
+        NkxpH2jFJCPmaHqr5iVRg3HQSwfMu+ovIWXMDL2UzOD7OzrhqJ+gpkYbG4cabCVqsJWowdZRTf0GYYEE
+        4QrIh7EAAAAASUVORK5CYII=
+</value>
+  </data>
   <metadata name="ToolTipThemCay.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="LapLich.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6

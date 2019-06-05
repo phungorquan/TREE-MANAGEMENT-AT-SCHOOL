@@ -45,6 +45,7 @@
     <Compile Include="CayCanhBUS.cs" />
     <Compile Include="LoaiCayBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TinhTrangBUS.cs" />
     <Compile Include="VattuBUS.cs" />
     <Compile Include="ViTriBUS.cs" />
   </ItemGroup>

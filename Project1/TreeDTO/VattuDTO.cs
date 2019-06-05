@@ -10,50 +10,30 @@ namespace TreeDTO
     {
         //-------------------------------------------------------------------------//
         //Thuoc Tinh
-        //private int maVatTu; Can Thiet
-        private string tenVatTu;
-        private string ngayMua;
-        private int soLuongMua;
-        private string diaChiMua;
-        private string loaiVatTu;
-        private long giaTien;
+      
+        private int mavattu;
+        private string tenvattu;
+        private string diachiban;
+
 
 
         //----------------------------------------------------------------------------//
         //Phuong Thuc
-        //public int Ma { get => ma; set => ma = value; }
         public string TenVatTuPT
         {
-            get => tenVatTu;
-            set => tenVatTu = value;
+            get => tenvattu;
+            set => tenvattu = value;
         }
-        public string NgayMuaPT
+        public int MaVatTuPT
         {
-            get => ngayMua;
-            set => ngayMua = value;
+            get => mavattu;
+            set => mavattu = value;
         }
-        public int SoLuongMuaPT
+        public string DiaChiBanPT
         {
-            get => soLuongMua;
-            set => soLuongMua = value;
+            get => diachiban;
+            set => diachiban = value;
         }
-        public string DiaChiMuaPT
-        {
-            get => diaChiMua;
-            set => diaChiMua = value;
-        }
-        public string LoaiVatTuPT
-        {
-            get => loaiVatTu;
-            set => loaiVatTu = value;
-        }
-        public long GiaTienPT
-        {
-            get => giaTien;
-            set => giaTien = value;
-        }
-
-
     }
 }
 

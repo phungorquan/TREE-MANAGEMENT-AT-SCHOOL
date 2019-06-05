@@ -13,7 +13,7 @@ namespace TreeDTO
 //Thuoc Tinh
         private string maCayCanh; //Can Thiet
         private string tenCay;
-        private string tinhTrang;
+        private int tinhTrang;
         private string ngayTrong;
         private string ngayChamSoc;
         private int maloaiCayCanh;
@@ -30,7 +30,7 @@ namespace TreeDTO
             get => tenCay;
             set => tenCay = value;
         }
-        public string TinhTrangPT {
+        public int TinhTrangPT {
             get => tinhTrang;
             set => tinhTrang = value;
         }

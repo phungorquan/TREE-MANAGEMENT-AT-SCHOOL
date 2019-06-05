@@ -18,6 +18,7 @@ namespace Project1
         private CayCanhBUS cayBus;
         private LoaiCayBUS LoaiCayBus;
         private ViTriBUS  ViTriBus;
+        private TinhTrangBUS TinhTrangBus;
         //----------------------------------------------------------------------------------//
         public ThemCay()
         {
@@ -29,8 +30,10 @@ namespace Project1
             cayBus = new CayCanhBUS();
             ViTriBus = new ViTriBUS();
             LoaiCayBus = new LoaiCayBUS();
+            TinhTrangBus = new TinhTrangBUS();
             loadViTriVao_Combobox();
             loadLoaiCayVao_Combobox();
+            loadTinhTrangVao_Combobox();
         }
         //----------------------------------------------------------------------------------//
         private void loadViTriVao_Combobox()
@@ -77,6 +80,28 @@ namespace Project1
             }
 
         }
+        private void loadTinhTrangVao_Combobox()
+        {
+            List<TinhTrangDTO> listTinhTrang = TinhTrangBus.selectTT();
+
+            if (listTinhTrang == null)
+            {
+                MessageBox.Show("Có lỗi khi lấy Món ăn từ DB");
+                return;
+            }
+            comboxTinhTrang.DataSource = new BindingSource(listTinhTrang, String.Empty);
+            comboxTinhTrang.DisplayMember = "TenTinhTrangPT";
+            comboxTinhTrang.ValueMember = "MaTinhTrangPT";
+
+            CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[comboxTinhTrang.DataSource];
+            myCurrencyManager.Refresh();
+
+            if (comboxTinhTrang.Items.Count > 0)
+            {
+                comboxTinhTrang.SelectedIndex = 0;
+            }
+
+        }
 
         //----------------------------------------------------------------------------------//       
         private void Huy_Click(object sender, EventArgs e)
@@ -91,10 +116,10 @@ namespace Project1
             CaycanhDTO cayDTO = new CaycanhDTO();
             cayDTO.MaCayCanhPT = MaCayTB.Text;
             cayDTO.TenCayPT = TenCaytb.Text;   
-            cayDTO.NgayTrongPT = NgayTrongTB.Text;
+            cayDTO.NgayTrongPT = dateTimeNgayTrong.Value.ToString();
             cayDTO.MaViTriPT = int.Parse(comboBoxVitri.SelectedValue.ToString());
             cayDTO.MaLoaiCayCanhPT = int.Parse(comboBoxLoaiCay.SelectedValue.ToString());
-            cayDTO.TinhTrangPT = "Tot";
+            cayDTO.TinhTrangPT = int.Parse(comboxTinhTrang.SelectedValue.ToString());
 
             //2. Kiểm tra data hợp lệ or not
 

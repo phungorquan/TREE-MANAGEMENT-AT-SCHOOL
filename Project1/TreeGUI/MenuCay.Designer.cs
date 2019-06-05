@@ -63,7 +63,7 @@
             this.SuaCay.Name = "SuaCay";
             this.SuaCay.Size = new System.Drawing.Size(172, 58);
             this.SuaCay.TabIndex = 2;
-            this.SuaCay.Text = "Sửa Thông Tin Cây";
+            this.SuaCay.Text = "Cập Nhận Thông Tin Cây";
             this.SuaCay.UseVisualStyleBackColor = true;
             this.SuaCay.Click += new System.EventHandler(this.SuaCay_Click_1);
             // 

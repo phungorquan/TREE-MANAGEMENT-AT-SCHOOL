@@ -23,13 +23,13 @@ namespace TreeBUS
             return result;
         }
 
-        public bool xoa(CaycanhDTO cayCanh)
+        public bool xoaCay(CaycanhDTO cayCanh)
         {
             bool result = CayDAL.xoaCay(cayCanh);
             return result;
         }
 
-        public bool sua(CaycanhDTO cayCanh)
+        public bool suaCay(CaycanhDTO cayCanh)
         {
             bool result = CayDAL.suaCay(cayCanh);
             return result;
@@ -37,7 +37,11 @@ namespace TreeBUS
 
         public List<CaycanhDTO> select()
         {
-            return null;
+            return CayDAL.selectCay();
+        }
+        public List<CaycanhDTO> selectByKeyWord(string sKeyword)
+        {
+            return CayDAL.selectByKeyWord(sKeyword);
         }
     }
 }
