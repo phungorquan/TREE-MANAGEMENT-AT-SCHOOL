@@ -117,10 +117,8 @@ Not only manage, this software also help you create forms to handle easily such 
     Step 5 : Save and disconnect the database
     Step 6 : End
 
-# V. Example:   
-# VI. FAQ & Usage:
-# VII. Contributing:
-# IV. Authors:
-  - Tống Anh Quân _ 16520985
+# V. Authors - Lecturer:
+  - Nguyễn Công Hoan _ Lecturer of Software Engineering
+  - Tống Anh Quân(*) _ 16520985
   - Bùi Trung Điền _ 16521554 
   - Nguyễn Đông Quân _ 16520982
