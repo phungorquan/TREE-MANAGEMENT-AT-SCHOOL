@@ -58,10 +58,11 @@ Not only manage, this software also help you create forms to handle easily such 
 
   - Overall Diagram :
 ![](Diagram/OD2.png)
-/*  */
-/*  */
+
+///////
+///////
+
   - Data Design :
-  
 ![](Diagram/DataDesign.png)
 
 ///////
