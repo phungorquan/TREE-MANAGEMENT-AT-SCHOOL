@@ -34,23 +34,28 @@ Not only manage, this software also help you create forms to handle easily such 
 # III. Diagram:
   - Situation :
 ![](Diagram/HienTrang.png)
-/*  */
-/*  */
+
+///////
+///////
+
   - Function Decomposition Diagram : 
 ![](Diagram/FDD2.png)
 
-/*  */  
-/*  */  
+///////
+///////
+
   - Data Flow Diagram :
 ![](Diagram/FDL2.png)
 
-/*  */ 
-/*  */  
+///////
+///////
+
   - Entity – Relationship Diagram :
 ![](Diagram/ERD2.png)
 
-/*  */
-/*  */
+///////
+///////
+
   - Overall Diagram :
 ![](Diagram/OD2.png)
 /*  */
@@ -59,16 +64,17 @@ Not only manage, this software also help you create forms to handle easily such 
   
 ![](Diagram/DataDesign.png)
 
-/*  */
-/*  */
+///////
+///////
+
   - Class Diagram Tree :
 ![](Diagram/CaytthietkeCD.png)
 
   - Class Diagram Supplies:
 ![](Diagram/VattuthietkeCD.png)  
 
-/*  */
-/*  */
+///////
+///////
 
 # IV. Functions:
   1. Create new tree records:
