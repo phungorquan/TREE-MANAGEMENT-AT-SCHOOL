@@ -14,8 +14,7 @@ namespace TreeDTO
         private string maCayCanh; //Can Thiet
         private string tenCay;
         private int tinhTrang;
-        private string ngayTrong;
-        private string ngayChamSoc;
+        private DateTime ngayTrong;
         private int maloaiCayCanh;
         private int  mavitri;
 
@@ -34,14 +33,11 @@ namespace TreeDTO
             get => tinhTrang;
             set => tinhTrang = value;
         }
-        public string NgayTrongPT {
+        public DateTime NgayTrongPT {
             get => ngayTrong;
             set => ngayTrong = value;
         }
-        public string NgayChamSocPT { 
-            get => ngayChamSoc; 
-            set => ngayChamSoc = value; 
-        }
+
         public int MaLoaiCayCanhPT
         {
             get => maloaiCayCanh;

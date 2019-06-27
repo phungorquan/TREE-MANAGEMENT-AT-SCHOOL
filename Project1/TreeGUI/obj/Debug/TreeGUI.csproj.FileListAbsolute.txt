@@ -45,3 +45,9 @@ D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeGUI\obj\Debug\Project1.MenuCa
 D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeGUI\obj\Debug\Project1.MenuCay.aa.resources
 D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeGUI\obj\Debug\Project1.XoaCay.resources
 D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeGUI\obj\Debug\Project1.SuaCay.resources
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeGUI\obj\Debug\Project1.LenLich.resources
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeGUI\obj\Debug\Project1.Setting.resources
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeGUI\obj\Debug\Project1.MenuVatTu.resources
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeGUI\obj\Debug\Project1.SuaVatTu.resources
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeGUI\obj\Debug\Project1.ThemVatTu.resources
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeGUI\obj\Debug\Project1.XoaVatTu.resources

@@ -103,12 +103,6 @@ namespace Project1
 
         }
 
-        //----------------------------------------------------------------------------------//       
-        private void Huy_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Them_Click(object sender, EventArgs e)
         {
 
@@ -116,7 +110,7 @@ namespace Project1
             CaycanhDTO cayDTO = new CaycanhDTO();
             cayDTO.MaCayCanhPT = MaCayTB.Text;
             cayDTO.TenCayPT = TenCaytb.Text;   
-            cayDTO.NgayTrongPT = dateTimeNgayTrong.Value.ToString();
+            cayDTO.NgayTrongPT = DateTime.Parse(dateTimeNgayTrong.Value.ToString());
             cayDTO.MaViTriPT = int.Parse(comboBoxVitri.SelectedValue.ToString());
             cayDTO.MaLoaiCayCanhPT = int.Parse(comboBoxLoaiCay.SelectedValue.ToString());
             cayDTO.TinhTrangPT = int.Parse(comboxTinhTrang.SelectedValue.ToString());
@@ -129,6 +123,11 @@ namespace Project1
                 MessageBox.Show("Thêm Cây Cảnh thất bại. Vui lòng kiểm tra lại dữ liệu");
             else
                 MessageBox.Show("Thêm Cây Cảnh thành công");
+        }
+
+        private void Huy_Click(object sender, EventArgs e)
+        {
+
         }
 
         //---------------------------------------------------------------------------------//

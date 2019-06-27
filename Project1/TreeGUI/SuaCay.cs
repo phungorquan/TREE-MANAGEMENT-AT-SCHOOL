@@ -40,7 +40,7 @@ namespace Project1
             //1. Map data from GUI
             CaycanhDTO cayDTO = new CaycanhDTO();
             cayDTO.TenCayPT = TenCaytb.Text;
-            cayDTO.NgayTrongPT = dateTimeNgayTrong.Value.ToString();
+            cayDTO.NgayTrongPT = DateTime.Parse(dateTimeNgayTrong.Value.ToString());
             cayDTO.MaViTriPT = int.Parse(comboBoxVitri.SelectedValue.ToString());
             cayDTO.MaLoaiCayCanhPT = int.Parse(comboBoxLoaiCay.SelectedValue.ToString());
 
@@ -126,7 +126,15 @@ namespace Project1
 
         }
 
-     
+        private void TimButton_Click(object sender, EventArgs e)
+        {
+            string sKeyword = MaCayTB.Text.Trim();
+            List<CaycanhDTO> listcayCanh = cayBus.selectByKeyWord(sKeyword);
+            CaycanhDTO maCay = listcayCanh[0];
+
+            dateTimeNgayTrong.Value = maCay.NgayTrongPT;
+
+        }
 
 
     }

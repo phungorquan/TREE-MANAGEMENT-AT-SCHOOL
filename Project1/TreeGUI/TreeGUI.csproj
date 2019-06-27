@@ -69,11 +69,41 @@
     <Compile Include="BcChamSoc.Designer.cs">
       <DependentUpon>BcChamSoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="LenLich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LenLich.Designer.cs">
+      <DependentUpon>LenLich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuVatTu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuVatTu.Designer.cs">
+      <DependentUpon>MenuVatTu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingThamSo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingThamSo.Designer.cs">
+      <DependentUpon>SettingThamSo.cs</DependentUpon>
+    </Compile>
     <Compile Include="SuaCay.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SuaCay.Designer.cs">
       <DependentUpon>SuaCay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuaVatTu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuaVatTu.Designer.cs">
+      <DependentUpon>SuaVatTu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemVatTu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemVatTu.Designer.cs">
+      <DependentUpon>ThemVatTu.cs</DependentUpon>
     </Compile>
     <Compile Include="XoaCay.cs">
       <SubType>Form</SubType>
@@ -126,17 +156,38 @@
     <Compile Include="TTCayCanh.Designer.cs">
       <DependentUpon>TTCayCanh.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vattu.cs">
+    <Compile Include="PhieuMuaVatTu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Vattu.Designer.cs">
-      <DependentUpon>Vattu.cs</DependentUpon>
+    <Compile Include="PhieuMuaVatTu.Designer.cs">
+      <DependentUpon>PhieuMuaVatTu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XoaVatTu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XoaVatTu.Designer.cs">
+      <DependentUpon>XoaVatTu.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="BcChamSoc.resx">
       <DependentUpon>BcChamSoc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LenLich.resx">
+      <DependentUpon>LenLich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuVatTu.resx">
+      <DependentUpon>MenuVatTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingThamSo.resx">
+      <DependentUpon>SettingThamSo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SuaCay.resx">
       <DependentUpon>SuaCay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuaVatTu.resx">
+      <DependentUpon>SuaVatTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemVatTu.resx">
+      <DependentUpon>ThemVatTu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XoaCay.resx">
       <DependentUpon>XoaCay.cs</DependentUpon>
@@ -175,8 +226,11 @@
     <EmbeddedResource Include="TTCayCanh.resx">
       <DependentUpon>TTCayCanh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vattu.resx">
-      <DependentUpon>Vattu.cs</DependentUpon>
+    <EmbeddedResource Include="PhieuMuaVatTu.resx">
+      <DependentUpon>PhieuMuaVatTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XoaVatTu.resx">
+      <DependentUpon>XoaVatTu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

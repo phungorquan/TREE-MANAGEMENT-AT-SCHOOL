@@ -9,13 +9,18 @@ namespace TreeDTO
     public class ViTriDTO
     {
         private int maViTri;
-
+        private string tenViTri;
+        private int soluong;
         public int MaViTriPT
         {
             get { return maViTri; }
             set { maViTri = value; }
         }
-        private string tenViTri;
+        public int SoLuongPT
+        {
+            get { return soluong; }
+            set { soluong = value; }
+        }
 
         public string TenViTriPT
         {

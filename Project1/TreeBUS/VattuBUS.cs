@@ -1,6 +1,5 @@
 ﻿using TreeDTO;
 using TreeDAL;
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,27 +16,27 @@ namespace TreeBUS
         {
             vtDAL = new VattuDAL();
         }
-        public bool them(VattuDTO vattu)
+        public bool themvattu(VattuDTO vattu)
         {
             bool result = vtDAL.themVatTu(vattu);
             return result;
         }
 
-        public bool xoa(VattuDTO vattu)
+        public bool xoavattu(VattuDTO vattu)
         {
             bool result = vtDAL.xoaVatTu(vattu);
             return result;
         }
 
-        public bool sua(VattuDTO vattu)
+        public bool suavattu(VattuDTO vattu)
         {
             bool result = vtDAL.suaVatTu(vattu);
             return result;
         }
 
-        public List<VattuDTO> select()
+        public List<VattuDTO> selectvattu()
         {
-            return null;
+            return vtDAL.selectVatTu();
         }
     }
 }

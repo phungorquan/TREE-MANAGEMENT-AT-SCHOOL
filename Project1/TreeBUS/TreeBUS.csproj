@@ -42,10 +42,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaoCaoBUS.cs" />
+    <Compile Include="BCCSThangBUS.cs" />
+    <Compile Include="BCTinhTrangBUS.cs" />
     <Compile Include="CayCanhBUS.cs" />
+    <Compile Include="ChamSocThangBUS.cs" />
+    <Compile Include="DonViTinhBUS.cs" />
+    <Compile Include="GiaVatTuBUS.cs" />
+    <Compile Include="LichChamSocBUS.cs" />
     <Compile Include="LoaiCayBUS.cs" />
+    <Compile Include="PhieuMuaVatTuBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThamSoBUS.cs" />
     <Compile Include="TinhTrangBUS.cs" />
+    <Compile Include="TTCayBUS.cs" />
     <Compile Include="VattuBUS.cs" />
     <Compile Include="ViTriBUS.cs" />
   </ItemGroup>

@@ -62,40 +62,13 @@ namespace Project1
                 e.Cancel = true;
             }
         }
-        //Github button
-        private void button1_Click(object sender, EventArgs e)
+        private void setting_Click(object sender, EventArgs e)
         {
-
+            Setting f = new Setting();
+            f.ShowDialog();
         }
-//----------------------------------------------------------------------------//
-//Những function chưa xác định 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
+        //----------------------------------------------------------------------------//
 
-        }
-        private void ffff(object sender, EventArgs e)
-        {
 
-        }
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void MainWindow_Load(object sender, EventArgs e)
-        {
-
-        }
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-        private void quanLyCayCanh1_Load(object sender, EventArgs e)
-        {
-
-        }
-        private void userControl11_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

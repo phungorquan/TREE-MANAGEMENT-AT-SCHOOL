@@ -41,12 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BCCSThangDTO.cs" />
+    <Compile Include="BCTinhTrangDTO.cs" />
     <Compile Include="CaycanhDTO.cs" />
     <Compile Include="BaoCaoDTO.cs" />
+    <Compile Include="ChamSocThangDTO.cs" />
     <Compile Include="DonViTinhDTO.cs" />
     <Compile Include="GiaVatTuDTO.cs" />
+    <Compile Include="LichchamsocDTO.cs" />
     <Compile Include="LoaiCayDTO.cs" />
+    <Compile Include="PhieuMuaVatTuDTO.cs" />
+    <Compile Include="ThamSoDTO.cs" />
     <Compile Include="TinhTrangDTO.cs" />
+    <Compile Include="TTCayDTO.cs" />
     <Compile Include="ViTriDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VattuDTO.cs" />

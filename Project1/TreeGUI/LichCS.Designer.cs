@@ -30,38 +30,57 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LichCS));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.timkiemBT = new System.Windows.Forms.Button();
+            this.dgvLich = new System.Windows.Forms.DataGridView();
+            this.dateTimeLaplich = new System.Windows.Forms.DateTimePicker();
             this.labelTieuDe = new System.Windows.Forms.Label();
-            this.dataCaycanh = new System.Windows.Forms.DataGridView();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThoiGian = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Vattu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonViTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.NgayLaptb = new System.Windows.Forms.TextBox();
-            this.CayCanhtb = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.maCayCanhtb = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataCaycanh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLich)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.timkiemBT);
+            this.panel1.Controls.Add(this.dgvLich);
+            this.panel1.Controls.Add(this.dateTimeLaplich);
             this.panel1.Controls.Add(this.labelTieuDe);
-            this.panel1.Controls.Add(this.dataCaycanh);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.NgayLaptb);
-            this.panel1.Controls.Add(this.CayCanhtb);
+            this.panel1.Controls.Add(this.maCayCanhtb);
             this.panel1.Location = new System.Drawing.Point(0, 13);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(993, 565);
             this.panel1.TabIndex = 4;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // timkiemBT
+            // 
+            this.timkiemBT.Location = new System.Drawing.Point(353, 93);
+            this.timkiemBT.Name = "timkiemBT";
+            this.timkiemBT.Size = new System.Drawing.Size(244, 30);
+            this.timkiemBT.TabIndex = 8;
+            this.timkiemBT.Text = "Tìm Kiếm";
+            this.timkiemBT.UseVisualStyleBackColor = true;
+            this.timkiemBT.Click += new System.EventHandler(this.timkiemBT_Click);
+            // 
+            // dgvLich
+            // 
+            this.dgvLich.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLich.Location = new System.Drawing.Point(3, 129);
+            this.dgvLich.Name = "dgvLich";
+            this.dgvLich.RowTemplate.Height = 24;
+            this.dgvLich.Size = new System.Drawing.Size(987, 436);
+            this.dgvLich.TabIndex = 7;
+            // 
+            // dateTimeLaplich
+            // 
+            this.dateTimeLaplich.Location = new System.Drawing.Point(619, 65);
+            this.dateTimeLaplich.Name = "dateTimeLaplich";
+            this.dateTimeLaplich.Size = new System.Drawing.Size(350, 22);
+            this.dateTimeLaplich.TabIndex = 6;
             // 
             // labelTieuDe
             // 
@@ -74,104 +93,33 @@
             this.labelTieuDe.TabIndex = 5;
             this.labelTieuDe.Text = "Lịch Chăm Sóc";
             // 
-            // dataCaycanh
+            // label4
             // 
-            this.dataCaycanh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataCaycanh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataCaycanh.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.STT,
-            this.ThoiGian,
-            this.Vattu,
-            this.DonViTinh,
-            this.Soluong,
-            this.GhiChu});
-            this.dataCaycanh.Location = new System.Drawing.Point(4, 96);
-            this.dataCaycanh.Margin = new System.Windows.Forms.Padding(4);
-            this.dataCaycanh.Name = "dataCaycanh";
-            this.dataCaycanh.Size = new System.Drawing.Size(989, 469);
-            this.dataCaycanh.TabIndex = 4;
-            this.dataCaycanh.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataCaycanh_CellContentClick);
-            // 
-            // STT
-            // 
-            this.STT.HeaderText = "STT";
-            this.STT.Name = "STT";
-            // 
-            // ThoiGian
-            // 
-            this.ThoiGian.HeaderText = "Thời Gian";
-            this.ThoiGian.Name = "ThoiGian";
-            // 
-            // Vattu
-            // 
-            this.Vattu.HeaderText = "Vật Tư";
-            this.Vattu.Name = "Vattu";
-            // 
-            // DonViTinh
-            // 
-            this.DonViTinh.HeaderText = "Đơn Vị Tính";
-            this.DonViTinh.Name = "DonViTinh";
-            // 
-            // Soluong
-            // 
-            this.Soluong.HeaderText = "Số Lượng";
-            this.Soluong.Name = "Soluong";
-            // 
-            // GhiChu
-            // 
-            this.GhiChu.HeaderText = "Ghi Chú";
-            this.GhiChu.Name = "GhiChu";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(22, 66);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(96, 17);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Mã Cây Cảnh:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(524, 68);
+            this.label2.Location = new System.Drawing.Point(509, 66);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Ngày Lập Lịch:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label1
+            // maCayCanhtb
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(83, 66);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 17);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Cây Cảnh:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // NgayLaptb
-            // 
-            this.NgayLaptb.Location = new System.Drawing.Point(641, 66);
-            this.NgayLaptb.Margin = new System.Windows.Forms.Padding(4);
-            this.NgayLaptb.Name = "NgayLaptb";
-            this.NgayLaptb.Size = new System.Drawing.Size(297, 22);
-            this.NgayLaptb.TabIndex = 1;
-            this.NgayLaptb.TextChanged += new System.EventHandler(this.NgayLaptb_TextChanged);
-            // 
-            // CayCanhtb
-            // 
-            this.CayCanhtb.Location = new System.Drawing.Point(164, 64);
-            this.CayCanhtb.Margin = new System.Windows.Forms.Padding(4);
-            this.CayCanhtb.Name = "CayCanhtb";
-            this.CayCanhtb.Size = new System.Drawing.Size(334, 22);
-            this.CayCanhtb.TabIndex = 0;
-            this.CayCanhtb.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(83, 66);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 17);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Cây Cảnh:";
-            this.label4.Click += new System.EventHandler(this.label1_Click);
+            this.maCayCanhtb.Location = new System.Drawing.Point(126, 65);
+            this.maCayCanhtb.Margin = new System.Windows.Forms.Padding(4);
+            this.maCayCanhtb.Name = "maCayCanhtb";
+            this.maCayCanhtb.Size = new System.Drawing.Size(334, 22);
+            this.maCayCanhtb.TabIndex = 0;
             // 
             // LichCS
             // 
@@ -183,11 +131,11 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LichCS";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LichCS";
+            this.Text = "Lịch Chăm Sóc";
             this.Load += new System.EventHandler(this.LichCS_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataCaycanh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLich)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -196,17 +144,11 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label labelTieuDe;
-        private System.Windows.Forms.DataGridView dataCaycanh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ThoiGian;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Vattu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DonViTinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Soluong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox NgayLaptb;
-        private System.Windows.Forms.TextBox CayCanhtb;
+        private System.Windows.Forms.TextBox maCayCanhtb;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker dateTimeLaplich;
+        private System.Windows.Forms.Button timkiemBT;
+        private System.Windows.Forms.DataGridView dgvLich;
     }
 }

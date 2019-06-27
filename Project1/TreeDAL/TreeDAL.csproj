@@ -43,12 +43,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaoCaoDAL.cs" />
+    <Compile Include="BCCSThangDAL.cs" />
+    <Compile Include="BCTinhTrangDAL.cs" />
     <Compile Include="CayCanhDAL.cs" />
+    <Compile Include="ChamSocThangDAL.cs" />
+    <Compile Include="DonViTinhDAL.cs" />
+    <Compile Include="GiaVatTuDAL.cs" />
+    <Compile Include="LichChamSocDAL.cs" />
     <Compile Include="LoaiCayDAL.cs" />
+    <Compile Include="PhieuMuaVatTuDAL.cs" />
+    <Compile Include="ThamSoDAL.cs" />
     <Compile Include="TinhTrangDAL.cs" />
+    <Compile Include="TTCayDAL.cs" />
     <Compile Include="ViTrDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VattuDAL.cs" />
+    <Compile Include="ViTriBUS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TreeDTO\TreeDTO.csproj">

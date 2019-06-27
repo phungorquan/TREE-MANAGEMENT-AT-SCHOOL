@@ -32,12 +32,13 @@
             this.ThemCay = new System.Windows.Forms.Button();
             this.XoaCay = new System.Windows.Forms.Button();
             this.SuaCay = new System.Windows.Forms.Button();
+            this.LenLich = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ThemCay
             // 
             this.ThemCay.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThemCay.Location = new System.Drawing.Point(94, 75);
+            this.ThemCay.Location = new System.Drawing.Point(94, 33);
             this.ThemCay.Name = "ThemCay";
             this.ThemCay.Size = new System.Drawing.Size(172, 58);
             this.ThemCay.TabIndex = 0;
@@ -48,7 +49,7 @@
             // XoaCay
             // 
             this.XoaCay.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XoaCay.Location = new System.Drawing.Point(94, 178);
+            this.XoaCay.Location = new System.Drawing.Point(94, 135);
             this.XoaCay.Name = "XoaCay";
             this.XoaCay.Size = new System.Drawing.Size(172, 58);
             this.XoaCay.TabIndex = 1;
@@ -59,7 +60,7 @@
             // SuaCay
             // 
             this.SuaCay.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SuaCay.Location = new System.Drawing.Point(94, 278);
+            this.SuaCay.Location = new System.Drawing.Point(94, 218);
             this.SuaCay.Name = "SuaCay";
             this.SuaCay.Size = new System.Drawing.Size(172, 58);
             this.SuaCay.TabIndex = 2;
@@ -67,12 +68,24 @@
             this.SuaCay.UseVisualStyleBackColor = true;
             this.SuaCay.Click += new System.EventHandler(this.SuaCay_Click_1);
             // 
+            // LenLich
+            // 
+            this.LenLich.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LenLich.Location = new System.Drawing.Point(94, 305);
+            this.LenLich.Name = "LenLich";
+            this.LenLich.Size = new System.Drawing.Size(172, 58);
+            this.LenLich.TabIndex = 3;
+            this.LenLich.Text = "Lên Lịch Chăm sóc";
+            this.LenLich.UseVisualStyleBackColor = true;
+            this.LenLich.Click += new System.EventHandler(this.LenLich_Click);
+            // 
             // MenuCay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.ClientSize = new System.Drawing.Size(354, 415);
+            this.Controls.Add(this.LenLich);
             this.Controls.Add(this.SuaCay);
             this.Controls.Add(this.XoaCay);
             this.Controls.Add(this.ThemCay);
@@ -90,5 +103,6 @@
         private System.Windows.Forms.Button ThemCay;
         private System.Windows.Forms.Button XoaCay;
         private System.Windows.Forms.Button SuaCay;
+        private System.Windows.Forms.Button LenLich;
     }
 }

@@ -157,7 +157,7 @@ namespace TreeDAL
                                 cay.MaCayCanhPT = reader["maCay"].ToString();
                                 cay.TenCayPT = reader["tenCay"].ToString();
                                 cay.MaLoaiCayCanhPT = int.Parse(reader["maloaicay"].ToString());
-                                cay.NgayTrongPT = reader["ngayTrong"].ToString();
+                                cay.NgayTrongPT = DateTime.Parse(reader["ngayTrong"].ToString());
                                 cay.MaViTriPT = int.Parse(reader["mavitri"].ToString());
                                 cay.TinhTrangPT = int.Parse(reader["tinhTrang"].ToString());
                                 lsCayCanh.Add(cay);
@@ -209,7 +209,7 @@ namespace TreeDAL
                                 cay.MaCayCanhPT = reader["maCay"].ToString();
                                 cay.TenCayPT = reader["tenCay"].ToString();
                                 cay.MaLoaiCayCanhPT = int.Parse(reader["maloaicay"].ToString());
-                                cay.NgayTrongPT = reader["ngayTrong"].ToString();
+                                cay.NgayTrongPT = DateTime.Parse(reader["ngayTrong"].ToString());
                                 cay.MaViTriPT = int.Parse(reader["mavitri"].ToString());
                                 cay.TinhTrangPT = int.Parse(reader["tinhTrang"].ToString());
                                 lsCayCanh.Add(cay);

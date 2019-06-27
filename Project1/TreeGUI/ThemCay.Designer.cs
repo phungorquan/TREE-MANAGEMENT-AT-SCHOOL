@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThemCay));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dateTimeNgayTrong = new System.Windows.Forms.DateTimePicker();
             this.comboxTinhTrang = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.MaCay = new System.Windows.Forms.Label();
@@ -44,7 +45,6 @@
             this.ViTri = new System.Windows.Forms.Label();
             this.TenCay = new System.Windows.Forms.Label();
             this.TenCaytb = new System.Windows.Forms.TextBox();
-            this.dateTimeNgayTrong = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,6 +70,13 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(840, 487);
             this.panel1.TabIndex = 1;
+            // 
+            // dateTimeNgayTrong
+            // 
+            this.dateTimeNgayTrong.Location = new System.Drawing.Point(251, 362);
+            this.dateTimeNgayTrong.Name = "dateTimeNgayTrong";
+            this.dateTimeNgayTrong.Size = new System.Drawing.Size(491, 22);
+            this.dateTimeNgayTrong.TabIndex = 34;
             // 
             // comboxTinhTrang
             // 
@@ -216,13 +223,6 @@
             this.TenCaytb.Name = "TenCaytb";
             this.TenCaytb.Size = new System.Drawing.Size(491, 22);
             this.TenCaytb.TabIndex = 13;
-            // 
-            // dateTimeNgayTrong
-            // 
-            this.dateTimeNgayTrong.Location = new System.Drawing.Point(251, 362);
-            this.dateTimeNgayTrong.Name = "dateTimeNgayTrong";
-            this.dateTimeNgayTrong.Size = new System.Drawing.Size(491, 22);
-            this.dateTimeNgayTrong.TabIndex = 34;
             // 
             // ThemCay
             // 

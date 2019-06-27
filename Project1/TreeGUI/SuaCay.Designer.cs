@@ -45,11 +45,13 @@
             this.ViTri = new System.Windows.Forms.Label();
             this.TenCay = new System.Windows.Forms.Label();
             this.TenCaytb = new System.Windows.Forms.TextBox();
+            this.TimButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.TimButton);
             this.panel1.Controls.Add(this.dateTimeNgayTrong);
             this.panel1.Controls.Add(this.comboBoxTinhTrang);
             this.panel1.Controls.Add(this.label1);
@@ -65,8 +67,8 @@
             this.panel1.Controls.Add(this.ViTri);
             this.panel1.Controls.Add(this.TenCay);
             this.panel1.Controls.Add(this.TenCaytb);
-            this.panel1.Location = new System.Drawing.Point(6, 16);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(5, 16);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(856, 517);
             this.panel1.TabIndex = 2;
@@ -74,6 +76,7 @@
             // dateTimeNgayTrong
             // 
             this.dateTimeNgayTrong.Location = new System.Drawing.Point(251, 405);
+            this.dateTimeNgayTrong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimeNgayTrong.Name = "dateTimeNgayTrong";
             this.dateTimeNgayTrong.Size = new System.Drawing.Size(491, 22);
             this.dateTimeNgayTrong.TabIndex = 34;
@@ -83,10 +86,11 @@
             // 
             this.comboBoxTinhTrang.FormattingEnabled = true;
             this.comboBoxTinhTrang.Location = new System.Drawing.Point(251, 354);
-            this.comboBoxTinhTrang.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxTinhTrang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxTinhTrang.Name = "comboBoxTinhTrang";
             this.comboBoxTinhTrang.Size = new System.Drawing.Size(491, 24);
             this.comboBoxTinhTrang.TabIndex = 33;
+            
             // 
             // label1
             // 
@@ -113,7 +117,7 @@
             // MaCayTB
             // 
             this.MaCayTB.Location = new System.Drawing.Point(251, 138);
-            this.MaCayTB.Margin = new System.Windows.Forms.Padding(4);
+            this.MaCayTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaCayTB.Name = "MaCayTB";
             this.MaCayTB.Size = new System.Drawing.Size(491, 22);
             this.MaCayTB.TabIndex = 30;
@@ -122,7 +126,7 @@
             // 
             this.comboBoxLoaiCay.FormattingEnabled = true;
             this.comboBoxLoaiCay.Location = new System.Drawing.Point(251, 247);
-            this.comboBoxLoaiCay.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxLoaiCay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxLoaiCay.Name = "comboBoxLoaiCay";
             this.comboBoxLoaiCay.Size = new System.Drawing.Size(491, 24);
             this.comboBoxLoaiCay.TabIndex = 29;
@@ -131,7 +135,7 @@
             // 
             this.comboBoxVitri.FormattingEnabled = true;
             this.comboBoxVitri.Location = new System.Drawing.Point(251, 297);
-            this.comboBoxVitri.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxVitri.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxVitri.Name = "comboBoxVitri";
             this.comboBoxVitri.Size = new System.Drawing.Size(491, 24);
             this.comboBoxVitri.TabIndex = 28;
@@ -140,7 +144,7 @@
             // 
             this.SuaButton.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SuaButton.Location = new System.Drawing.Point(164, 452);
-            this.SuaButton.Margin = new System.Windows.Forms.Padding(4);
+            this.SuaButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SuaButton.Name = "SuaButton";
             this.SuaButton.Size = new System.Drawing.Size(200, 50);
             this.SuaButton.TabIndex = 27;
@@ -153,7 +157,7 @@
             this.Huy.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Huy.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Huy.Location = new System.Drawing.Point(423, 452);
-            this.Huy.Margin = new System.Windows.Forms.Padding(4);
+            this.Huy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Huy.Name = "Huy";
             this.Huy.Size = new System.Drawing.Size(200, 50);
             this.Huy.TabIndex = 27;
@@ -187,7 +191,7 @@
             // 
             this.NgayTrong.AutoSize = true;
             this.NgayTrong.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NgayTrong.Location = new System.Drawing.Point(83, 403);
+            this.NgayTrong.Location = new System.Drawing.Point(83, 402);
             this.NgayTrong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NgayTrong.Name = "NgayTrong";
             this.NgayTrong.Size = new System.Drawing.Size(113, 24);
@@ -219,19 +223,30 @@
             // TenCaytb
             // 
             this.TenCaytb.Location = new System.Drawing.Point(251, 193);
-            this.TenCaytb.Margin = new System.Windows.Forms.Padding(4);
+            this.TenCaytb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TenCaytb.Name = "TenCaytb";
             this.TenCaytb.Size = new System.Drawing.Size(491, 22);
             this.TenCaytb.TabIndex = 13;
+            // 
+            // TimButton
+            // 
+            this.TimButton.Location = new System.Drawing.Point(765, 136);
+            this.TimButton.Name = "TimButton";
+            this.TimButton.Size = new System.Drawing.Size(75, 23);
+            this.TimButton.TabIndex = 35;
+            this.TimButton.Text = "Tìm";
+            this.TimButton.UseVisualStyleBackColor = true;
+            this.TimButton.Click += new System.EventHandler(this.TimButton_Click);
             // 
             // SuaCay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(861, 531);
+            this.ClientSize = new System.Drawing.Size(861, 530);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "SuaCay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sửa Cây";
@@ -261,5 +276,6 @@
         private System.Windows.Forms.ComboBox comboBoxTinhTrang;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateTimeNgayTrong;
+        private System.Windows.Forms.Button TimButton;
     }
 }

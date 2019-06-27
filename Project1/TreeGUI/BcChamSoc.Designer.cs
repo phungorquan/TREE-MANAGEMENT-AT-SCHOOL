@@ -30,30 +30,73 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BcChamSoc));
             this.panelMain = new System.Windows.Forms.Panel();
-            this.TieuDe = new System.Windows.Forms.Label();
+            this.namLB = new System.Windows.Forms.Label();
+            this.yearBT = new System.Windows.Forms.TextBox();
+            this.monthBT = new System.Windows.Forms.TextBox();
+            this.timKiemBT = new System.Windows.Forms.Button();
             this.dataChamSoc = new System.Windows.Forms.DataGridView();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Vattu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoPhieuMua = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TongTriGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tyle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label2 = new System.Windows.Forms.Label();
-            this.ThangTextBox = new System.Windows.Forms.TextBox();
+            this.TieuDe = new System.Windows.Forms.Label();
+            this.thangLB = new System.Windows.Forms.Label();
             this.panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataChamSoc)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMain
             // 
-            this.panelMain.Controls.Add(this.TieuDe);
+            this.panelMain.Controls.Add(this.namLB);
+            this.panelMain.Controls.Add(this.yearBT);
+            this.panelMain.Controls.Add(this.monthBT);
+            this.panelMain.Controls.Add(this.timKiemBT);
             this.panelMain.Controls.Add(this.dataChamSoc);
-            this.panelMain.Controls.Add(this.label2);
-            this.panelMain.Controls.Add(this.ThangTextBox);
+            this.panelMain.Controls.Add(this.TieuDe);
+            this.panelMain.Controls.Add(this.thangLB);
             this.panelMain.Location = new System.Drawing.Point(0, 16);
             this.panelMain.Margin = new System.Windows.Forms.Padding(4);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(934, 522);
             this.panelMain.TabIndex = 4;
+            // 
+            // namLB
+            // 
+            this.namLB.AutoSize = true;
+            this.namLB.Location = new System.Drawing.Point(405, 63);
+            this.namLB.Name = "namLB";
+            this.namLB.Size = new System.Drawing.Size(41, 17);
+            this.namLB.TabIndex = 10;
+            this.namLB.Text = "Năm:";
+            // 
+            // yearBT
+            // 
+            this.yearBT.Location = new System.Drawing.Point(452, 60);
+            this.yearBT.Name = "yearBT";
+            this.yearBT.Size = new System.Drawing.Size(95, 22);
+            this.yearBT.TabIndex = 9;
+            // 
+            // monthBT
+            // 
+            this.monthBT.Location = new System.Drawing.Point(298, 60);
+            this.monthBT.Name = "monthBT";
+            this.monthBT.Size = new System.Drawing.Size(89, 22);
+            this.monthBT.TabIndex = 8;
+            // 
+            // timKiemBT
+            // 
+            this.timKiemBT.Location = new System.Drawing.Point(567, 57);
+            this.timKiemBT.Name = "timKiemBT";
+            this.timKiemBT.Size = new System.Drawing.Size(100, 29);
+            this.timKiemBT.TabIndex = 7;
+            this.timKiemBT.Text = "Tìm Kiếm";
+            this.timKiemBT.UseVisualStyleBackColor = true;
+            this.timKiemBT.Click += new System.EventHandler(this.timKiemBT_Click);
+            // 
+            // dataChamSoc
+            // 
+            this.dataChamSoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataChamSoc.Location = new System.Drawing.Point(3, 92);
+            this.dataChamSoc.Name = "dataChamSoc";
+            this.dataChamSoc.RowTemplate.Height = 24;
+            this.dataChamSoc.Size = new System.Drawing.Size(930, 427);
+            this.dataChamSoc.TabIndex = 6;
             // 
             // TieuDe
             // 
@@ -65,68 +108,16 @@
             this.TieuDe.Size = new System.Drawing.Size(418, 45);
             this.TieuDe.TabIndex = 5;
             this.TieuDe.Text = "Báo Cáo Chi Phí Chăm Sóc";
-            this.TieuDe.Click += new System.EventHandler(this.TieuDe_Click);
             // 
-            // dataChamSoc
+            // thangLB
             // 
-            this.dataChamSoc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataChamSoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataChamSoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.STT,
-            this.Vattu,
-            this.SoPhieuMua,
-            this.TongTriGia,
-            this.Tyle});
-            this.dataChamSoc.Location = new System.Drawing.Point(4, 96);
-            this.dataChamSoc.Margin = new System.Windows.Forms.Padding(4);
-            this.dataChamSoc.Name = "dataChamSoc";
-            this.dataChamSoc.Size = new System.Drawing.Size(926, 422);
-            this.dataChamSoc.TabIndex = 4;
-            this.dataChamSoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataChamSoc_CellContentClick);
-            // 
-            // STT
-            // 
-            this.STT.HeaderText = "STT";
-            this.STT.Name = "STT";
-            // 
-            // Vattu
-            // 
-            this.Vattu.HeaderText = "Vật Tư";
-            this.Vattu.Name = "Vattu";
-            // 
-            // SoPhieuMua
-            // 
-            this.SoPhieuMua.HeaderText = "Số Phiếu Mua";
-            this.SoPhieuMua.Name = "SoPhieuMua";
-            // 
-            // TongTriGia
-            // 
-            this.TongTriGia.HeaderText = "Tổng Trị Giá";
-            this.TongTriGia.Name = "TongTriGia";
-            // 
-            // Tyle
-            // 
-            this.Tyle.HeaderText = "Tỷ Lệ";
-            this.Tyle.Name = "Tyle";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(263, 66);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 17);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Tháng";
-            // 
-            // ThangTextBox
-            // 
-            this.ThangTextBox.Location = new System.Drawing.Point(365, 63);
-            this.ThangTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.ThangTextBox.Name = "ThangTextBox";
-            this.ThangTextBox.Size = new System.Drawing.Size(398, 22);
-            this.ThangTextBox.TabIndex = 1;
-            this.ThangTextBox.TextChanged += new System.EventHandler(this.ThangTextBox_TextChanged);
+            this.thangLB.AutoSize = true;
+            this.thangLB.Location = new System.Drawing.Point(238, 63);
+            this.thangLB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.thangLB.Name = "thangLB";
+            this.thangLB.Size = new System.Drawing.Size(53, 17);
+            this.thangLB.TabIndex = 3;
+            this.thangLB.Text = "Tháng:";
             // 
             // BcChamSoc
             // 
@@ -139,7 +130,6 @@
             this.Name = "BcChamSoc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Báo Cáo Chi Phí Chăm Sóc";
-            this.MinimumSizeChanged += new System.EventHandler(this.BcChamSoc_MinimumSizeChanged);
             this.Load += new System.EventHandler(this.BcChamSoc_Load);
             this.panelMain.ResumeLayout(false);
             this.panelMain.PerformLayout();
@@ -152,13 +142,11 @@
 
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Label TieuDe;
+        private System.Windows.Forms.Label thangLB;
         private System.Windows.Forms.DataGridView dataChamSoc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Vattu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoPhieuMua;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TongTriGia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tyle;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox ThangTextBox;
+        private System.Windows.Forms.Label namLB;
+        private System.Windows.Forms.TextBox yearBT;
+        private System.Windows.Forms.TextBox monthBT;
+        private System.Windows.Forms.Button timKiemBT;
     }
 }

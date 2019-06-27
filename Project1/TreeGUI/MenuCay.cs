@@ -34,5 +34,11 @@ namespace Project1
             SuaCay f = new SuaCay();
             f.ShowDialog();
         }
+
+        private void LenLich_Click(object sender, EventArgs e)
+        {
+            LenLich f = new LenLich();
+            f.ShowDialog();
+        }
     }
 }
