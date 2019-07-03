@@ -38,9 +38,10 @@
             // ThemCay
             // 
             this.ThemCay.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThemCay.Location = new System.Drawing.Point(94, 33);
+            this.ThemCay.Location = new System.Drawing.Point(70, 27);
+            this.ThemCay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ThemCay.Name = "ThemCay";
-            this.ThemCay.Size = new System.Drawing.Size(172, 58);
+            this.ThemCay.Size = new System.Drawing.Size(129, 47);
             this.ThemCay.TabIndex = 0;
             this.ThemCay.Text = "Thêm Cây Mới";
             this.ThemCay.UseVisualStyleBackColor = true;
@@ -49,9 +50,10 @@
             // XoaCay
             // 
             this.XoaCay.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XoaCay.Location = new System.Drawing.Point(94, 135);
+            this.XoaCay.Location = new System.Drawing.Point(70, 98);
+            this.XoaCay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.XoaCay.Name = "XoaCay";
-            this.XoaCay.Size = new System.Drawing.Size(172, 58);
+            this.XoaCay.Size = new System.Drawing.Size(129, 47);
             this.XoaCay.TabIndex = 1;
             this.XoaCay.Text = "Xóa Cây";
             this.XoaCay.UseVisualStyleBackColor = true;
@@ -60,9 +62,10 @@
             // SuaCay
             // 
             this.SuaCay.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SuaCay.Location = new System.Drawing.Point(94, 218);
+            this.SuaCay.Location = new System.Drawing.Point(70, 172);
+            this.SuaCay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SuaCay.Name = "SuaCay";
-            this.SuaCay.Size = new System.Drawing.Size(172, 58);
+            this.SuaCay.Size = new System.Drawing.Size(129, 47);
             this.SuaCay.TabIndex = 2;
             this.SuaCay.Text = "Cập Nhận Thông Tin Cây";
             this.SuaCay.UseVisualStyleBackColor = true;
@@ -71,9 +74,10 @@
             // LenLich
             // 
             this.LenLich.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LenLich.Location = new System.Drawing.Point(94, 305);
+            this.LenLich.Location = new System.Drawing.Point(70, 242);
+            this.LenLich.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LenLich.Name = "LenLich";
-            this.LenLich.Size = new System.Drawing.Size(172, 58);
+            this.LenLich.Size = new System.Drawing.Size(129, 47);
             this.LenLich.TabIndex = 3;
             this.LenLich.Text = "Lên Lịch Chăm sóc";
             this.LenLich.UseVisualStyleBackColor = true;
@@ -81,16 +85,17 @@
             // 
             // MenuCay
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.ClientSize = new System.Drawing.Size(354, 415);
+            this.ClientSize = new System.Drawing.Size(266, 337);
             this.Controls.Add(this.LenLich);
             this.Controls.Add(this.SuaCay);
             this.Controls.Add(this.XoaCay);
             this.Controls.Add(this.ThemCay);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MenuCay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Cây Cảnh";

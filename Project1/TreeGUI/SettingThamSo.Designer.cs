@@ -42,7 +42,7 @@
             // suaDoiBT
             // 
             this.suaDoiBT.Location = new System.Drawing.Point(82, 100);
-            this.suaDoiBT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.suaDoiBT.Margin = new System.Windows.Forms.Padding(2);
             this.suaDoiBT.Name = "suaDoiBT";
             this.suaDoiBT.Size = new System.Drawing.Size(76, 25);
             this.suaDoiBT.TabIndex = 0;
@@ -75,7 +75,7 @@
             // TienTB
             // 
             this.TienTB.Location = new System.Drawing.Point(200, 23);
-            this.TienTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TienTB.Margin = new System.Windows.Forms.Padding(2);
             this.TienTB.Name = "TienTB";
             this.TienTB.ReadOnly = true;
             this.TienTB.Size = new System.Drawing.Size(176, 20);
@@ -84,7 +84,7 @@
             // CayTB
             // 
             this.CayTB.Location = new System.Drawing.Point(200, 70);
-            this.CayTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CayTB.Margin = new System.Windows.Forms.Padding(2);
             this.CayTB.Name = "CayTB";
             this.CayTB.ReadOnly = true;
             this.CayTB.Size = new System.Drawing.Size(176, 20);
@@ -93,7 +93,7 @@
             // Hủy
             // 
             this.Hủy.Location = new System.Drawing.Point(208, 100);
-            this.Hủy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Hủy.Margin = new System.Windows.Forms.Padding(2);
             this.Hủy.Name = "Hủy";
             this.Hủy.Size = new System.Drawing.Size(76, 25);
             this.Hủy.TabIndex = 5;
@@ -111,7 +111,7 @@
             this.panel1.Controls.Add(this.suaDoiBT);
             this.panel1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(384, 145);
             this.panel1.TabIndex = 0;
@@ -124,7 +124,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Setting";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chỉnh Sửa Tham Số";

@@ -34,5 +34,29 @@ namespace Project1
             XoaVatTu f = new XoaVatTu();
             f.ShowDialog();
         }
+
+        private void thayDoiThamSo_Click(object sender, EventArgs e)
+        {
+            Setting f = new Setting();
+            f.ShowDialog();
+        }
+
+        private void themViTriBT_Click(object sender, EventArgs e)
+        {
+            ThemViTri f = new ThemViTri();
+            f.ShowDialog();
+        }
+
+        private void suaViTri_Click(object sender, EventArgs e)
+        {
+            SuaViTri f = new SuaViTri();
+            f.ShowDialog();
+        }
+
+        private void xoaViTri_Click(object sender, EventArgs e)
+        {
+            XoaViTri f = new XoaViTri();
+            f.ShowDialog();
+        }
     }
 }

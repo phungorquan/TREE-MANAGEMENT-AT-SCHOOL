@@ -17,9 +17,28 @@ namespace TreeDTO
         private DateTime ngayTrong;
         private int maloaiCayCanh;
         private int  mavitri;
+        private string tenloai;
+        private string tenvt;
+        private string tentt;
 
         //----------------------------------------------------------------------------//
         //Phuong Thuc
+        public string TenTinhTrangPT
+        {
+            get => tentt;
+            set => tentt = value;
+        }
+        public string TenLoaiPT
+        {
+            get => tenloai;
+            set => tenloai = value;
+        }
+        public string TenViTriPT
+        {
+            get => tenvt;
+            set => tenvt = value;
+        }
+
         public string MaCayCanhPT
         {
             get => maCayCanh;

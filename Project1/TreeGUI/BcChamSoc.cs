@@ -20,8 +20,6 @@ namespace Project1
         private GiaVatTuBUS GiaVatTuBus;
         List<BCCSThangDTO> BaoCao;
         List<VattuDTO> listVatTu;
-        List<int> sophieu;
-        List<long> tongtien;
         List<PhieuMuaVatTuDTO> ListPhieuMua,Result;
       
 
@@ -56,8 +54,7 @@ namespace Project1
         }
         private bool XuLySoLieu()
         {
-            sophieu = new List<int>(listVatTu.Count());
-            tongtien = new List<long>(listVatTu.Count());
+            
             BaoCao = new List<BCCSThangDTO>();
             Result = new List<PhieuMuaVatTuDTO>();
             int count = 0, i = 0, number = 0 ;
@@ -85,43 +82,36 @@ namespace Project1
                 }
 
             }
-            if (Result == null || Result.Count == 0  )
+            if (Result == null || Result.Count == 0)
             {
                 return false;
             }
-            for(i = 0; i < listVatTu.Count(); i++)
-            {
-                sophieu.Add(0);
-                tongtien.Add(0);
-            }
             count = Result.Count();
-            for ( i = 0; i < count; i++)
-            {
-                sophieu[Result[i].MaVatTuPT - 1]++;
-                tongtien[Result[i].MaVatTuPT - 1] = tongtien[Result[i].MaVatTuPT - 1]+ Result[i].SoTienPT;
-            }
-            if(Result.Count() < listVatTu.Count())
-            {
-                number = Result.Count();
-            }
-            else
-            {
-                number = listVatTu.Count();
-            }
-            for (i = 0; i < number; i++)
+            number = listVatTu.Count();
+            for (i = 0; i < listVatTu.Count(); i++)
             {
                 BCCSThangDTO Temp = new BCCSThangDTO();
-                Temp.MaCTChiPhiThangPT = monthBT.Text+yearBT.Text + (Result[i].MaVatTuPT - 1).ToString();
+                Temp.MaCTChiPhiThangPT = monthBT.Text + yearBT.Text + (i).ToString();
                 Temp.MaChiPhiThangPT = monthBT.Text + yearBT.Text + i.ToString();
-                Temp.TenVatTuPT = listVatTu[Result[i].MaVatTuPT-1].TenVatTuPT;
-                Temp.MaVatTuPT = Result[i].MaVatTuPT;
-                Temp.SoPhieuMuaPT = sophieu[Result[i].MaVatTuPT - 1];
-                Temp.TongTriGiaPT = tongtien[Result[i].MaVatTuPT - 1];
-                Temp.TyLePT = Convert.ToDouble(sophieu[Result[i].MaVatTuPT - 1]) / count;
-                BaoCao.Add(Temp);
+                Temp.TenVatTuPT = listVatTu[i].TenVatTuPT;
+                Temp.MaVatTuPT = listVatTu[i].MaVatTuPT;
+                for(number = 0; number < Result.Count(); number++)
+                {
+                    if(Result[number].MaVatTuPT == Temp.MaVatTuPT)
+                    {
+                        Temp.SoPhieuMuaPT++;
+                        Temp.TongTriGiaPT = Temp.TongTriGiaPT+ Result[number].SoTienPT;
+                    }
+                  
+                }
+                Temp.TyLePT = Convert.ToDouble(Temp.SoPhieuMuaPT) / count;
+                if(Temp.SoPhieuMuaPT != 0 && Temp.TongTriGiaPT != 0)
+                {
+                    BaoCao.Add(Temp);
+                }
+
                 Temp = null;
-            }
-            
+            }      
             return true;
         }
 

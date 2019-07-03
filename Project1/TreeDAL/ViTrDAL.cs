@@ -63,7 +63,7 @@ namespace TreeDAL
         public bool xoaViTri(ViTriDTO vitri)
         {
             string query = string.Empty;
-            query += "DELETE FROM tblCayCanh WHERE [mavitri] = @mavitri";
+            query += "DELETE FROM VITRI WHERE [mavitri] = @mavitri";
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
 

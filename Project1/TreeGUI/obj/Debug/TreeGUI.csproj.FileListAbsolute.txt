@@ -51,3 +51,6 @@ D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeGUI\obj\Debug\Project1.MenuVa
 D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeGUI\obj\Debug\Project1.SuaVatTu.resources
 D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeGUI\obj\Debug\Project1.ThemVatTu.resources
 D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeGUI\obj\Debug\Project1.XoaVatTu.resources
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeGUI\obj\Debug\Project1.ThemViTri.resources
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeGUI\obj\Debug\Project1.SuaViTri.resources
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeGUI\obj\Debug\Project1.XoaViTri.resources

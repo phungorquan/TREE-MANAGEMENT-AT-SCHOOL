@@ -64,8 +64,12 @@ namespace Project1
         }
         private void setting_Click(object sender, EventArgs e)
         {
-            Setting f = new Setting();
+            MenuVatTu f = new MenuVatTu();
             f.ShowDialog();
+            quanLyCayCanh1.Refresh();
+            vattu1.Refresh();
+            userControl11.Refresh();
+
         }
         //----------------------------------------------------------------------------//
 

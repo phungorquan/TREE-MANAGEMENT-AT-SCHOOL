@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vattu));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.settingBT = new System.Windows.Forms.Button();
+            this.CbDonVi = new System.Windows.Forms.ComboBox();
             this.maPhieuMuaTB = new System.Windows.Forms.TextBox();
             this.maPhieuMua = new System.Windows.Forms.Label();
             this.VattuTB = new System.Windows.Forms.TextBox();
@@ -49,14 +49,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.soluongTB = new System.Windows.Forms.TextBox();
-            this.CbDonVi = new System.Windows.Forms.ComboBox();
+            this.refesh = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.refesh);
             this.panel1.Controls.Add(this.CbDonVi);
-            this.panel1.Controls.Add(this.settingBT);
             this.panel1.Controls.Add(this.maPhieuMuaTB);
             this.panel1.Controls.Add(this.maPhieuMua);
             this.panel1.Controls.Add(this.VattuTB);
@@ -80,17 +80,13 @@
             this.panel1.Size = new System.Drawing.Size(773, 398);
             this.panel1.TabIndex = 0;
             // 
-            // settingBT
+            // CbDonVi
             // 
-            this.settingBT.FlatAppearance.BorderSize = 0;
-            this.settingBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settingBT.Image = ((System.Drawing.Image)(resources.GetObject("settingBT.Image")));
-            this.settingBT.Location = new System.Drawing.Point(725, 3);
-            this.settingBT.Name = "settingBT";
-            this.settingBT.Size = new System.Drawing.Size(45, 40);
-            this.settingBT.TabIndex = 26;
-            this.settingBT.UseVisualStyleBackColor = true;
-            this.settingBT.Click += new System.EventHandler(this.settingBT_Click);
+            this.CbDonVi.FormattingEnabled = true;
+            this.CbDonVi.Location = new System.Drawing.Point(231, 169);
+            this.CbDonVi.Name = "CbDonVi";
+            this.CbDonVi.Size = new System.Drawing.Size(466, 21);
+            this.CbDonVi.TabIndex = 27;
             // 
             // maPhieuMuaTB
             // 
@@ -264,13 +260,17 @@
             this.soluongTB.TabIndex = 3;
             this.soluongTB.TextChanged += new System.EventHandler(this.soluongTB_TextChanged);
             // 
-            // CbDonVi
+            // refesh
             // 
-            this.CbDonVi.FormattingEnabled = true;
-            this.CbDonVi.Location = new System.Drawing.Point(231, 169);
-            this.CbDonVi.Name = "CbDonVi";
-            this.CbDonVi.Size = new System.Drawing.Size(466, 21);
-            this.CbDonVi.TabIndex = 27;
+            this.refesh.FlatAppearance.BorderSize = 0;
+            this.refesh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.refesh.Image = ((System.Drawing.Image)(resources.GetObject("refesh.Image")));
+            this.refesh.Location = new System.Drawing.Point(738, 3);
+            this.refesh.Name = "refesh";
+            this.refesh.Size = new System.Drawing.Size(32, 32);
+            this.refesh.TabIndex = 29;
+            this.refesh.UseVisualStyleBackColor = true;
+            this.refesh.Click += new System.EventHandler(this.refesh_Click);
             // 
             // Vattu
             // 
@@ -307,7 +307,7 @@
         private System.Windows.Forms.Label maVatTuTB;
         private System.Windows.Forms.Label maPhieuMua;
         private System.Windows.Forms.TextBox maPhieuMuaTB;
-        private System.Windows.Forms.Button settingBT;
         private System.Windows.Forms.ComboBox CbDonVi;
+        private System.Windows.Forms.Button refesh;
     }
 }

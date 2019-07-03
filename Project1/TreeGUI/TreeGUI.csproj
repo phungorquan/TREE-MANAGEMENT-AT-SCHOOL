@@ -99,11 +99,23 @@
     <Compile Include="SuaVatTu.Designer.cs">
       <DependentUpon>SuaVatTu.cs</DependentUpon>
     </Compile>
+    <Compile Include="SuaViTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuaViTri.Designer.cs">
+      <DependentUpon>SuaViTri.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThemVatTu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ThemVatTu.Designer.cs">
       <DependentUpon>ThemVatTu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemViTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemViTri.Designer.cs">
+      <DependentUpon>ThemViTri.cs</DependentUpon>
     </Compile>
     <Compile Include="XoaCay.cs">
       <SubType>Form</SubType>
@@ -168,6 +180,12 @@
     <Compile Include="XoaVatTu.Designer.cs">
       <DependentUpon>XoaVatTu.cs</DependentUpon>
     </Compile>
+    <Compile Include="XoaViTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XoaViTri.Designer.cs">
+      <DependentUpon>XoaViTri.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BcChamSoc.resx">
       <DependentUpon>BcChamSoc.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,8 +204,14 @@
     <EmbeddedResource Include="SuaVatTu.resx">
       <DependentUpon>SuaVatTu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SuaViTri.resx">
+      <DependentUpon>SuaViTri.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ThemVatTu.resx">
       <DependentUpon>ThemVatTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemViTri.resx">
+      <DependentUpon>ThemViTri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XoaCay.resx">
       <DependentUpon>XoaCay.cs</DependentUpon>
@@ -231,6 +255,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="XoaVatTu.resx">
       <DependentUpon>XoaVatTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XoaViTri.resx">
+      <DependentUpon>XoaViTri.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

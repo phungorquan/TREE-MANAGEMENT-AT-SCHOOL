@@ -43,6 +43,7 @@ namespace Project1
             CayTB.ResetText();
             TienTB.AppendText(ListThamSo[0].SoTienToiDaPT.ToString());
             CayTB.AppendText(ListThamSo[0].SoCayToiDaPT.ToString());
+            this.Hide();
         }
 
         private void suaDoiBT_Click(object sender, EventArgs e)
@@ -60,6 +61,11 @@ namespace Project1
                 TienTB.ReadOnly = true;
                 CayTB.ReadOnly = true;
                 count = 0;
+                if(TienTB.Text == "" || CayTB.Text == "")
+                {
+                    MessageBox.Show("Vui lòng nhập dữ liệu");
+                    return;
+                }
                 ThamSoDTO Thamso = new ThamSoDTO();
                 Thamso.SoTienToiDaPT = int.Parse(TienTB.Text);
                 Thamso.SoCayToiDaPT = int.Parse(CayTB.Text);

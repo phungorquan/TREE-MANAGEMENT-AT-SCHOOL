@@ -29,12 +29,12 @@ namespace Project1
         {
             lichBus = new LichChamSocBUS();
             vattuBus = new VattuBUS();
-            loadMaVatTu_Combobox();
+
             cayBus = new CayCanhBUS();
             DonViTinhBus = new DonViTinhBUS();
             listDonVi = DonViTinhBus.selectDonVi();
             listVatTu = vattuBus.selectvattu();
-            selectedLoaiVatTu = int.Parse(comboBoxMaVatTu.SelectedValue.ToString());
+            //selectedLoaiVatTu = int.Parse(comboBoxMaVatTu.SelectedValue.ToString());
 
             maChamSocTB.ReadOnly = true;
             gioTB.ReadOnly = true;
@@ -66,11 +66,31 @@ namespace Project1
             }
         }
 
+        private void Donvi_Combobox()
+        {
+            List<DonViTinhDTO> listDonVi = DonViTinhBus.selectDonVi();
+
+            if (listDonVi == null)
+            {
+                MessageBox.Show("Có lỗi khi lấy Món ăn từ DB");
+                return;
+            }
+            comboBoxDonVi.DataSource = new BindingSource(listDonVi, String.Empty);
+            comboBoxDonVi.DisplayMember = "TenDonViTinhPT";
+            comboBoxDonVi.ValueMember = "MaDonViTinhPT";
+
+            CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[comboBoxDonVi.DataSource];
+            myCurrencyManager.Refresh();
+
+            if (comboBoxDonVi.Items.Count > 0)
+            {
+                comboBoxDonVi.ResetText();
+            }
+        }
         private void comboBoxMaVatTu_SelectedIndexChanged(object sender, EventArgs e)
         {
             selectedLoaiVatTu = int.Parse(comboBoxMaVatTu.SelectedValue.ToString());
-            DonViTB.ResetText();
-            DonViTB.AppendText(listDonVi[selectedLoaiVatTu - 1].TenDonViTinhPT);
+
         }
 
 
@@ -107,10 +127,11 @@ namespace Project1
                 maChamSocTB.ReadOnly = false;
                 gioTB.ReadOnly = false;
                 PhutTB.ReadOnly = false;
-
                 soLuongTB.ReadOnly = false;
                 ghiChuTB.ReadOnly = false;
                 soLuongTB.ReadOnly = false;
+                loadMaVatTu_Combobox();
+                Donvi_Combobox();
             }
             else
             {
@@ -129,6 +150,16 @@ namespace Project1
         }
         private void LenLichBT_Click(object sender, EventArgs e)
         {
+            if(gioTB.Text == ""
+                || PhutTB.Text == ""
+                ||maChamSocTB.Text == ""
+                ||maCayTB.Text == ""
+                ||ghiChuTB.Text == ""
+                ||soLuongTB.Text == "")
+            {
+                MessageBox.Show("Vui Lòng nhập đây đủ thông tin trước khi thực hiện");
+                return;
+            }
             //1. Map data from GUI
             DateTime ngaylap = new DateTime(2019,6,24);
             TimeSpan time = new TimeSpan(int.Parse(gioTB.Text.ToString()), int.Parse(PhutTB.Text.ToString()),0);
@@ -137,22 +168,21 @@ namespace Project1
             lichDTO.MaChamSocPT = maChamSocTB.Text;
             lichDTO.MaCayPT = maCayTB.Text;
             lichDTO.GhiChuPT = ghiChuTB.Text;
-            lichDTO.GhiChuPT = ghiChuTB.Text;
             lichDTO.MaVatTuPT = int.Parse(comboBoxMaVatTu.SelectedValue.ToString());
             lichDTO.SoLuongPT = int.Parse(soLuongTB.Text.ToString());
             lichDTO.NgayLapLichPT = ngaylap;
             lichDTO.MaDonViTinhPT = listDonVi[selectedLoaiVatTu-1].MaDonViTinhPT;
             lichDTO.ThoiGianPT = timeticks;
-            lichDTO.DonViTinhPT = listDonVi[selectedLoaiVatTu - 1].TenDonViTinhPT;
-            lichDTO.DonViTinhPT = listVatTu[selectedLoaiVatTu - 1].TenVatTuPT; 
+            //lichDTO.DonViTinhPT = listDonVi[selectedLoaiVatTu - 1].TenDonViTinhPT;
+            //lichDTO.TenVatTuPT = listVatTu[selectedLoaiVatTu - 1].TenVatTuPT; 
             //2. Kiểm tra data hợp lệ or not
 
             //3. Thêm vào DB
             bool result = lichBus.themlich(lichDTO);
             if (result == false)
-                MessageBox.Show("Thêm Cây Cảnh thất bại. Vui lòng kiểm tra lại dữ liệu");
+                MessageBox.Show("Thêm Lịch thất bại. Vui lòng kiểm tra lại dữ liệu");
             else
-                MessageBox.Show("Thêm Cây Cảnh thành công");
+                MessageBox.Show("Thêm Lịch thành công");
         }
     }
 }

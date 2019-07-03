@@ -39,6 +39,11 @@ namespace Project1
         private void timkiemBT_Click(object sender, EventArgs e)
         {
             int i = 0;
+            if(maCayCanhtb.Text == "")
+            {
+                MessageBox.Show("Vui Lòng nhập dữ liệu trước khi thực hiện");
+                return;
+            }
             string sKeyword = maCayCanhtb.Text.Trim();
             DateTime ngaytrong = dateTimeLaplich.Value;
             List<LichchamsocDTO> listlich = lichBus.selectByKeyWord(sKeyword);
@@ -68,7 +73,7 @@ namespace Project1
         {
             if (listLich == null||listLich.Count == 0)
             {
-                MessageBox.Show("Có lỗi khi lấy Món ăn từ DB");
+                MessageBox.Show("Có lỗi khi lấy lịch từ DataBase");
                 return;
             }
 

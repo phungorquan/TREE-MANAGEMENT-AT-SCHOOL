@@ -96,7 +96,7 @@ namespace TreeDAL
         public bool suaCay(CaycanhDTO tree)
         {
             string query = string.Empty;
-            query += "UPDATE tblCayCanh SET [tenCay] = @tenCay, [maloaicay] = @maloaicay, [ngayTrong] = @ngayTrong, [mavitri] = @mavitri WHERE [maCay] = @maCay";
+            query += "UPDATE tblCayCanh SET [tenCay] = @tenCay, [maloaicay] = @maloaicay, [ngayTrong] = @ngayTrong, [mavitri] = @mavitri,[tinhTrang] = @tinhTrang WHERE [maCay] = @maCay";
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
 
@@ -110,6 +110,7 @@ namespace TreeDAL
                     cmd.Parameters.AddWithValue("@maloaicay", tree.MaLoaiCayCanhPT);
                     cmd.Parameters.AddWithValue("@ngayTrong", tree.NgayTrongPT);
                     cmd.Parameters.AddWithValue("@mavitri", tree.MaViTriPT);
+                    cmd.Parameters.AddWithValue("@tinhTrang", tree.TinhTrangPT);
                     try
                     {
                         con.Open();
@@ -182,8 +183,7 @@ namespace TreeDAL
             query += " SELECT [maCay],[tenCay],[maloaicay],[ngayTrong],[mavitri],[tinhTrang]";
             query += " FROM [tblCayCanh]";
             query += " WHERE ([maCay] LIKE CONCAT('%',@sKeyword,'%'))";
-            query += " OR ([tenCay] LIKE CONCAT('%',@sKeyword,'%'))";
-            query += " OR ([ngayTrong] LIKE CONCAT('%',@sKeyword,'%'))";
+
 
             List<CaycanhDTO> lsCayCanh = new List<CaycanhDTO>();
 

@@ -49,6 +49,7 @@
             this.HuyBT.TabIndex = 15;
             this.HuyBT.Text = "Hủy";
             this.HuyBT.UseVisualStyleBackColor = true;
+            this.HuyBT.Click += new System.EventHandler(this.HuyBT_Click);
             // 
             // suaBT
             // 

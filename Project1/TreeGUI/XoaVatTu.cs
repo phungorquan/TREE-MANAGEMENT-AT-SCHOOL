@@ -34,6 +34,11 @@ namespace Project1
 
         private void XoaBT_Click(object sender, EventArgs e)
         {
+            if(maVatTuTB.Text  == "")
+            {
+                MessageBox.Show("Vui Lòng nhập đầy đủ trước khi thực hiện");
+                return;
+            }
             VattuDTO vt = new VattuDTO();
             GiaVatTuDTO gia = new GiaVatTuDTO();
             vt.MaVatTuPT = int.Parse(maVatTuTB.Text);
@@ -44,9 +49,10 @@ namespace Project1
             bool kq = vattu.xoavattu(vt);
             bool kq1 = giabus.xoaGia(gia);
             if (kq == false || kq1 == false )
-                MessageBox.Show("Xóa thông tin cây thất bại. Vui lòng kiểm tra lại dữ liệu");
+                MessageBox.Show("Xóa thông tin vật tư thất bại. Vui lòng kiểm tra lại dữ liệu");
             else
-                MessageBox.Show("Xóa thông tin cây thành công");
+                MessageBox.Show("Xóa thông tin vật tư thành công");
+            this.Hide();
         }
     }
 }

@@ -33,9 +33,9 @@ namespace TreeDAL
                 {
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
-                    cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@SoLuongCayCanhToiDa", thamso.SoTienToiDaPT);
-                    cmd.Parameters.AddWithValue("@SoTienMuaToiDa", thamso.SoCayToiDaPT);
+                    cmd.CommandText = query; 
+                    cmd.Parameters.AddWithValue("@SoTienMuaToiDa", thamso.SoTienToiDaPT);
+                    cmd.Parameters.AddWithValue("@SoLuongCayCanhToiDa", thamso.SoCayToiDaPT);
 
                     try
                     {
@@ -56,8 +56,8 @@ namespace TreeDAL
 
         public List<ThamSoDTO> selectThamSo()
         {
-            string query = string.Empty;
-            query += "SELECT[SoLuongCayCanhToiDa],[SoTienMuaToiDa]";
+            string query = string.Empty; 
+             query += "SELECT[SoTienMuaToiDa],[SoLuongCayCanhToiDa]";
             query += "FROM [THAMSO]";
 
             List<ThamSoDTO> lsThamSo = new List<ThamSoDTO>();
@@ -80,9 +80,9 @@ namespace TreeDAL
                         {
                             while (reader.Read())
                             {
-                                ThamSoDTO thamSo = new ThamSoDTO();
-                                thamSo.SoTienToiDaPT = int.Parse(reader["SoLuongCayCanhToiDa"].ToString());
-                                thamSo.SoCayToiDaPT = int.Parse(reader["SoTienMuaToiDa"].ToString());
+                                ThamSoDTO thamSo = new ThamSoDTO(); 
+                                thamSo.SoTienToiDaPT = int.Parse(reader["SoTienMuaToiDa"].ToString());
+                                thamSo.SoCayToiDaPT = int.Parse(reader["SoLuongCayCanhToiDa"].ToString());
                                 lsThamSo.Add(thamSo);
                             }
                         }

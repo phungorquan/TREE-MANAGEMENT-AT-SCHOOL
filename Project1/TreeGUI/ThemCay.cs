@@ -19,6 +19,9 @@ namespace Project1
         private LoaiCayBUS LoaiCayBus;
         private ViTriBUS  ViTriBus;
         private TinhTrangBUS TinhTrangBus;
+        private ThamSoBUS thamso;
+        private List<ThamSoDTO> tsDTO;
+        private List<ViTriDTO> listViTri;
         //----------------------------------------------------------------------------------//
         public ThemCay()
         {
@@ -27,10 +30,12 @@ namespace Project1
 
         private void ThemCay_Load(object sender, EventArgs e)
         {
+            thamso = new ThamSoBUS();
             cayBus = new CayCanhBUS();
             ViTriBus = new ViTriBUS();
             LoaiCayBus = new LoaiCayBUS();
             TinhTrangBus = new TinhTrangBUS();
+            tsDTO = thamso.selectThamSo();
             loadViTriVao_Combobox();
             loadLoaiCayVao_Combobox();
             loadTinhTrangVao_Combobox();
@@ -38,7 +43,7 @@ namespace Project1
         //----------------------------------------------------------------------------------//
         private void loadViTriVao_Combobox()
         {
-            List<ViTriDTO> listViTri= ViTriBus.selectVT();
+            listViTri= ViTriBus.selectVT();
 
             if (listViTri == null)
             {
@@ -54,7 +59,7 @@ namespace Project1
 
             if (comboBoxVitri.Items.Count > 0)
             {
-                comboBoxVitri.SelectedIndex = 0;
+                comboBoxVitri.ResetText();
             }
 
         }
@@ -76,7 +81,7 @@ namespace Project1
 
             if (comboBoxLoaiCay.Items.Count > 0)
             {
-                comboBoxLoaiCay.SelectedIndex = 0;
+                comboBoxLoaiCay.ResetText();
             }
 
         }
@@ -98,14 +103,23 @@ namespace Project1
 
             if (comboxTinhTrang.Items.Count > 0)
             {
-                comboxTinhTrang.SelectedIndex = 0;
+                comboxTinhTrang.ResetText();
             }
 
         }
 
         private void Them_Click(object sender, EventArgs e)
         {
-
+            int i = 0,vitri = 0;
+            if (MaCayTB.Text == "" || TenCaytb.Text == ""
+                || dateTimeNgayTrong.Value.ToString() == ""
+                || comboBoxVitri.SelectedValue.ToString() == ""
+                || comboBoxLoaiCay.SelectedValue.ToString() == ""
+                || comboxTinhTrang.SelectedValue.ToString() == "")
+            {
+                MessageBox.Show("Vui lòng nhập dữ liệu");
+                return;
+            }
             //1. Map data from GUI
             CaycanhDTO cayDTO = new CaycanhDTO();
             cayDTO.MaCayCanhPT = MaCayTB.Text;
@@ -116,7 +130,32 @@ namespace Project1
             cayDTO.TinhTrangPT = int.Parse(comboxTinhTrang.SelectedValue.ToString());
 
             //2. Kiểm tra data hợp lệ or not
-
+            for(i = 0; i< listViTri.Count(); i++)
+            {
+                if (listViTri[i].MaViTriPT == cayDTO.MaViTriPT)
+                {
+                    vitri = i;
+                    break;
+                }
+            }
+            if(tsDTO[0].SoCayToiDaPT < listViTri[vitri].SoLuongPT)
+            {
+                MessageBox.Show("Số lương Cây cảnh đã vượt quá số lương tối đa của vị trí. Vui lòng chọn vị trí khác");
+                return;
+            }
+            else
+            {
+                ViTriDTO suavt = new ViTriDTO();
+                suavt.MaViTriPT = listViTri[vitri].MaViTriPT;
+                suavt.TenViTriPT = listViTri[vitri].TenViTriPT;
+                suavt.SoLuongPT = listViTri[vitri].SoLuongPT + 1;
+                bool result1 = ViTriBus.suaViTri(suavt);
+                if(result1 == false)
+                {
+                    MessageBox.Show("có vấn đề đang xảy ra");
+                }
+                
+            }
             //3. Thêm vào DB
             bool result = cayBus.them(cayDTO);
             if (result == false)
