@@ -1,0 +1,9 @@
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeDAL\obj\Debug\TreeDAL.csprojAssemblyReference.cache
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeDAL\obj\Debug\TreeDAL.csproj.CoreCompileInputs.cache
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeDAL\bin\Debug\TreeDAL.dll
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeDAL\bin\Debug\TreeDAL.pdb
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeDAL\obj\Debug\TreeDAL.dll
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeDAL\obj\Debug\TreeDAL.pdb
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeDAL\bin\Debug\TreeDTO.dll
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeDAL\bin\Debug\TreeDTO.pdb
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeDAL\obj\Debug\TreeDAL.csproj.CopyComplete

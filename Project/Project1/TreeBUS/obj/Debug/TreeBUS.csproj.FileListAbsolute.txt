@@ -1,0 +1,11 @@
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeBUS\bin\Debug\TreeBUS.dll
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeBUS\bin\Debug\TreeBUS.pdb
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeBUS\bin\Debug\TreeDAL.dll
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeBUS\bin\Debug\TreeDTO.dll
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeBUS\bin\Debug\TreeDAL.pdb
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeBUS\bin\Debug\TreeDTO.pdb
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeBUS\obj\Debug\TreeBUS.csprojAssemblyReference.cache
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeBUS\obj\Debug\TreeBUS.csproj.CoreCompileInputs.cache
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeBUS\obj\Debug\TreeBUS.csproj.CopyComplete
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeBUS\obj\Debug\TreeBUS.dll
+D:\Burn\Dien\Document\Code\C#\Project\Project1\TreeBUS\obj\Debug\TreeBUS.pdb
