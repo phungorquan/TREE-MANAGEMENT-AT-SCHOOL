@@ -161,7 +161,8 @@ namespace Project1
                 return;
             }
             //1. Map data from GUI
-            DateTime ngaylap = new DateTime(2019,6,24);
+            DateTime ngaylap = new DateTime();
+            ngaylap = DateTime.Now;
             TimeSpan time = new TimeSpan(int.Parse(gioTB.Text.ToString()), int.Parse(PhutTB.Text.ToString()),0);
             long timeticks = time.Ticks;
             LichchamsocDTO lichDTO = new LichchamsocDTO();
